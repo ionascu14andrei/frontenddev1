@@ -1,0 +1,109 @@
+
+
+
+body {
+    background-color: #050210;
+}
+
+
+
+
+.cerc-principal {
+    height: 600px;
+    width: 600px;
+    border-radius: 50%;
+    background: linear-gradient(#fb5dad 0%, #55fb9f 50%, #b97aff 100%);
+    display: block;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: rotatie 2s infinite;
+    animation-timing-function: linear;
+    margin-left: -300px;
+    margin-top: -300px;
+    
+}
+
+.umbra {
+    height: 650px;
+    width: 650px;
+    border-radius: 50%;
+    background: linear-gradient(#fb5dad 0%, #55fb9f 50%, #b97aff 100%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-left: -325px;
+    margin-top: -325px;
+    animation: rotatie 2s infinite;
+    animation-timing-function: linear;
+    filter: blur(200px);
+}
+
+
+@keyframes rotatie {
+    from {
+        transform: rotate(0deg);
+    }
+    
+    to {
+        transform: rotate(720deg);
+        
+    }
+}
+
+
+
+
+.cerc-secundar {
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    background-color: #050210;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    
+}
+
+.cerc-pulse {
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    background-color: #050213;
+    top: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+    filter: brightness(1.5);
+    animation: pulse 1s ease-in-out 0s infinite;
+    animation-timing-function: ease-out;
+    margin-top: -250px;
+    margin-left: -250px;
+
+    
+}
+
+
+
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.5, 0.5); opacity: 0.5;
+    }
+    50% {
+        opacity: 1.0;
+    }
+    100% {
+        transform: scale(1, 1); opacity: 0.5;
+    }
+    
+} 
+
+
+
