@@ -1,0 +1,158 @@
+/* Basic full-page format */
+
+
+* {
+    margin: 10px;
+}
+
+
+h1 {
+    font-family: cursive;
+    font-size: 24px;
+    color: black;
+    text-align: center;
+}
+
+
+/* Flexbox */
+
+#flexbox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+
+#flexbox > div {
+    display: inline-block;
+    background-color: white;
+    height: 260px;
+    width: 200px;
+    flex-basis: 16.6666%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    background: linear-gradient(dodgerblue 80%, white 80%);
+    border-radius: 10px;
+}
+
+
+#flexbox > div:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    background: linear-gradient(deepskyblue 80%, white 80%);
+}
+
+
+#flexbox > div:last-child {
+    align-items: flex-start;
+}
+
+/* resp */
+
+@media screen and (max-width: 1024px) {
+    #flexbox {
+        justify-content: center;
+    }
+    
+
+}
+
+@media screen and (max-width: 1024px) {
+    #flexbox > div {
+        flex-basis: 25%;
+        
+    }
+}
+
+
+
+@media screen and (max-width: 768px) {
+    #flexbox {
+        justify-content: center;
+    }
+    
+        
+}
+
+
+
+@media screen and (max-width: 768px) {
+    #flexbox > div {
+        flex-basis: 50%;
+    }
+    h1 {
+        text-align: center;
+    }
+    
+    #text {
+        margin-left: 20px;
+        margin-right: 20px;
+        width: 90%;
+        font-size: 16px;
+    }
+}
+
+
+
+
+@media screen and (max-width: 414px) {
+    #flexbox {
+        justify-content: center;
+    }
+}
+
+
+@media screen and (max-width: 414px) {
+    #flexbox > div {
+        flex-basis: 90%;
+    }
+    h1 {
+        text-align: center;
+
+    }
+    
+    #text {
+        margin-left: 10px;
+        margin-right: 10px;
+        width: 90%;
+        font-size: 13px;
+    }
+    
+}
+
+
+
+
+
+
+/* img */
+
+
+img {
+    width: 95%;
+    height: 180px;
+}
+
+/* format text */
+
+h3 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+
+#text {
+    display: flex;
+    text-decoration: none;
+    overflow: hidden; 
+    text-align: left;
+    text-indent: 20px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 18px;
+    font-family: sans-serif;
+}
